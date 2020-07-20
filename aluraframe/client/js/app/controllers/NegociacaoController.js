@@ -1,16 +1,20 @@
-class NegociacaoController{
-    
-    adiciona(){
-        event.preventDefault();
+class NegociacaoController {
+
+    constructor() {
 
         let $ = document.querySelector.bind(document);
-        
-        let inputData = $('#data');
-        let inputQuantidade = $('#quantidade');
-        let inputValor = $('#valor');
+        this.inputData = $('#data');
+        this.inputQuantidade = $('#quantidade');
+        this.inputValor = $('#valor');
 
-        console.log(inputData.value);
-        console.log(inputQuantidade.value);
-        console.log(inputValor.value);
+    }
+
+    adiciona() {
+
+        event.preventDefault();
+
+        console.log(this.inputData.value);
+        console.log(this.inputQuantidade.value);
+        console.log(this.inputValor.value);
     }
 }
