@@ -13,7 +13,7 @@ class NegociacaoController {
 
         event.preventDefault();
 
-        console.log(typeof(this._inputData.value));
-        console.log(this._inputData.value);
+        let data = new Date(this._inputData.value.replace(/-/g, ','));
+        console.log(data);
     }
 }
